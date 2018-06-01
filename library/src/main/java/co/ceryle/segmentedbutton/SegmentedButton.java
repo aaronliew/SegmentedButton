@@ -634,6 +634,13 @@ public class SegmentedButton extends View {
         this.textColorOnSelection = textColorOnSelection;
     }
 
+    public void setText(String text){
+        this.text = text;
+        hasText = true;
+        initText();
+        requestLayout();
+    }
+
     /**
      * @return drawable's tint color when selector is on the button
      */
